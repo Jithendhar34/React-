@@ -1,0 +1,22 @@
+.navbar {
+    background: #1a1a1a;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  }
+  
+  .navbar a {
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #00d8ff;
+  }
+  
