@@ -14,6 +14,7 @@ function Home() {
           <a href="#contact">Contact Me</a>
           <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
         </div>
+<<<<<<< HEAD
       </div>
 
       {/* GIF Image Section */}
@@ -29,3 +30,10 @@ function Home() {
 }
 
 export default Home;
+=======
+      </section>
+    );
+  }
+export default Home;
+  
+>>>>>>> bcb8a2680a9ef4dac223f1fb9f4d432edb20c84f
