@@ -1,22 +1,50 @@
 .navbar {
-    background: #1a1a1a;
-    padding: 20px 40px;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-  }
-  
-  .navbar a {
-    margin-left: 20px;
-    font-weight: 500;
-    transition: color 0.3s;
-  }
-  
-  .navbar a:hover {
-    color: #00d8ff;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px 30px;
+  border-bottom: 2px solid #a855f7;
+}
+
+.brand-name {
+  color: #a855f7;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.nav-btn {
+  padding: 12px 20px;
+  margin: 5px;
+  text-decoration: none;
+  border: 1px solid #a855f7;
+  border-radius: 6px;
+  background-color: #2b0a3d;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav-btn:hover {
+  background-color: #a855f7;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.nav-btn.resume {
+  background-color: #6b21a8;
+  border: 1px solid #d946ef;
+}
+
+.nav-btn.resume:hover {
+  background-color: #d946ef;
+}

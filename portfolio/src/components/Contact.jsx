@@ -5,13 +5,13 @@ function Contact() {
         <p>Feel free to reach out for collaborations or just a friendly chat!</p>
   
         <div className="contact-links">
-          <a href="mailto:your.email@example.com" target="_blank" rel="noopener noreferrer">
+          <a href="jithendharkampati04@gmail.com" target="_blank" rel="noopener noreferrer">
             📧 Email
           </a>
-          <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Jithendhar34" target="_blank" rel="noopener noreferrer">
             💻 GitHub
           </a>
-          <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/k-jithendhar-reddy-696474260" target="_blank" rel="noopener noreferrer">
             🔗 LinkedIn
           </a>
         </div>

@@ -1,60 +1,21 @@
+import './Skills.css';
+
 function Skills() {
-    return (
-      <section id="skills" className="skills-section fade-in">
+  return (
+    <section id="skills" className="skills-section fade-in">
+      <div className="skills-box">
         <h2>Skills</h2>
-        <div className="skills-container">
-          <div className="skill">
-            <span>HTML</span>
-            <div className="bar">
-              <div className="fill html"></div>
-            </div>
-          </div>
-          <div className="skill">
-            <span>CSS</span>
-            <div className="bar">
-              <div className="fill css"></div>
-            </div>
-          </div>
-          <div className="skill">
-            <span>JavaScript</span>
-            <div className="bar">
-              <div className="fill js"></div>
-            </div>
-          </div>
-          <div className="skill">
-            <span>React</span>
-            <div className="bar">
-              <div className="fill react"></div>
-            </div>
-          </div>
-          <div className="skill">
-            <span>Node.js</span>
-            <div className="bar">
-              <div className="fill node"></div>
-            </div>
-          </div>
-          <div className="skill">
-            <span>SQL</span>
-            <div className="bar">
-              <div className="fill sql"></div>
-            </div>
-          </div>
-          <div className="skill">
-            <span>MongoDB</span>
-            <div className="bar">
-              <div className="fill mongo"></div>
-            </div>
-          </div>
-          <div className="skill">
-            <span>Java</span>
-            <div className="bar">
-              <div className="fill java"></div>
-            </div>
-          </div>
+        <div className="skills-tags">
+          {[
+            'HTML', 'CSS', 'JavaScript', 'React', 'Node.js',
+            'SQL', 'MongoDB', 'Java', 'Git', 'GitHub', 'Express', 'Vue.js'
+          ].map((skill, index) => (
+            <span key={index} className="skill-tag">{skill}</span>
+          ))}
         </div>
-      </section>
-    );
-  }
-  
-  export default Skills;
-  
+      </div>
+    </section>
+  );
+}
+
+export default Skills;
