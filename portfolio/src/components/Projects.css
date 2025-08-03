@@ -4,12 +4,38 @@
   color: #fff;
   text-align: center;
 }
-
 .section-title {
   font-size: 2.8rem;
   font-weight: 800;
-  color: #a855f7;
-  margin-bottom: 10px;
+  background: linear-gradient(to right, #a855f7, #9333ea);  /* Purple Gradient Text */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 3px;
+  background: linear-gradient(to right, #a855f7, #9333ea);  /* Purple Gradient Underline */
+  margin: 0 auto;
+  margin-top: 5px;
+  border-radius: 2px;
+}
+
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 3px;
+  background: linear-gradient(to right, #a855f7, #9333ea);  /* Purple Gradient Underline */
+  margin: 0 auto;
+  margin-top: 5px;
+  border-radius: 2px;
 }
 
 .section-subtitle {
@@ -22,6 +48,7 @@
   margin-bottom: 40px;
   display: flex;
   justify-content: center;
+  gap: 15px;
 }
 
 .filter-btn {
@@ -68,6 +95,17 @@
   margin-bottom: 10px;
 }
 
+.project-card h3 a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.project-card h3 a:hover {
+  color: #a855f7;  /* Purple on hover */
+}
+
 .project-card p {
   font-size: 15px;
   color: #ccc;
@@ -83,14 +121,4 @@
     width: 100%;
     max-width: 200px;
   }
-}
-.project-card h3 a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.project-card h3 a:hover {
-  color: #a855f7; /* optional: purple on hover */
 }
