@@ -1,5 +1,12 @@
 import './Certifications.css';
 
+// 1. Import all your certificate files from the assets folder.
+// Make sure the filenames and paths are exactly correct.
+import infosysCertificate from '../assets/infosys .jpg';
+import nimsmeCertificate from '../assets/ni-msme certifiacte .jpg';
+import ciscoCertificate from '../assets/Cyber security essentials .pdf';
+import udemyCertificate from '../assets/udemy certificate.pdf';
+
 function Certifications() {
   return (
     <section id="certifications" className="certifications-section">
@@ -18,7 +25,8 @@ function Certifications() {
           <p>Infosys Foundation</p>
           <span>June 2024</span>
         </div>
-        <a href="#" className="certificate-link" target="_blank" rel="noopener noreferrer">View Certificate</a>
+        {/* 2. Use the imported variables in the href for each link */}
+        <a href={infosysCertificate} className="certificate-link" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
 
       {/* ni-msme */}
@@ -28,7 +36,7 @@ function Certifications() {
           <p>ni-msme (National Institute for Micro, Small and Medium Enterprises)</p>
           <span>April 2024</span>
         </div>
-        <a href="#" className="certificate-link" target="_blank" rel="noopener noreferrer">View Certificate</a>
+        <a href={nimsmeCertificate} className="certificate-link" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
 
       {/* Cisco Networking Academy */}
@@ -38,7 +46,7 @@ function Certifications() {
           <p>Cisco Networking Academy</p>
           <span>May 2023</span>
         </div>
-        <a href="#" className="certificate-link" target="_blank" rel="noopener noreferrer">View Certificate</a>
+        <a href={ciscoCertificate} className="certificate-link" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
 
       {/* Udemy - DSA with Java */}
@@ -48,7 +56,7 @@ function Certifications() {
           <p>Udemy</p>
           <span>December 2023</span>
         </div>
-        <a href="#" className="certificate-link" target="_blank" rel="noopener noreferrer">View Certificate</a>
+        <a href={udemyCertificate} className="certificate-link" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
 
       {/* AlmaBetter Capstone */}
@@ -58,6 +66,7 @@ function Certifications() {
           <p>AlmaBetter</p>
           <span>July 2024</span>
         </div>
+        {/* This link is still a placeholder, you can import its certificate too */}
         <a href="#" className="certificate-link" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
 

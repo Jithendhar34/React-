@@ -1,4 +1,6 @@
 import './Experience.css';
+// 1. Import the PDF file from your assets folder
+import ibmCertificate from '../assets/IBM skills build .pdf';
 
 function Experience() {
   return (
@@ -24,7 +26,8 @@ function Experience() {
           <span>Team Collaboration</span>
           <span>APIs</span>
         </div>
-        <a href="#certifications" className="certificate-link">📄 View Certificate</a>
+        {/* 2. Use the imported variable in the href attribute */}
+        <a href={ibmCertificate} className="certificate-link" target="_blank" rel="noopener noreferrer">📄 View Certificate</a>
       </div>
 
     </section>
