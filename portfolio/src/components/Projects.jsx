@@ -11,6 +11,22 @@ function Projects() {
       </div>
 
       <div className="projects-grid">
+        {/* --- NEW: Creator's Corner Project --- */}
+        <div className="project-card">
+          <h3>
+            <a 
+              href="#" // TODO: Add the deployed URL for Creator's Corner here
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Full-Stack E-Commerce Platform (Creator's Corner)
+            </a>
+          </h3>
+          <p>
+            A complete MERN stack application where users can sign up, log in, and perform CRUD operations to create, update, and delete their own products.
+          </p>
+        </div>
+
         <div className="project-card">
           <h3>
             <a 
